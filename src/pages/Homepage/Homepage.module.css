@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'DM Sans';
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -83,6 +84,12 @@
     
     #lineFour {
         font-size: 13px;
+    }
+
+    #attribution {
+        font-size: 13px;
+        /* bottom: 0;
+        background-color: rgba(255, 255, 255, 0.9); */
     }
 
     .center {

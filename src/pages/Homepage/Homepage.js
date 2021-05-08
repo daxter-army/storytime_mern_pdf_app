@@ -56,7 +56,7 @@ const Homepage = () => {
                     }
                 </div>
             </div>
-            <p id={classes.attribution}><a href='https://www.github.com/daxter-army/story_time_mern_pdf_app' target='_blank'>Created by: <b>Mehul Singh Teya</b></a> | <a href='https://www.freepik.com' target='_blank'>Assets Courtesy: <b>Freepik</b></a></p>
+            <p id={classes.attribution}><a href='https://www.github.com/daxter-army/storytime_mern_pdf_app' target='_blank'>Created by: <b>Mehul Singh Teya</b></a> | <a href='https://www.freepik.com' target='_blank'>Assets Courtesy: <b>Freepik</b></a></p>
         </div>
     )
 }
