@@ -1,0 +1,92 @@
+.wrapper {
+    position: relative;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Sans';
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.center {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* border: 1px #C0C0C0 solid; */
+    border-radius: 5px;
+}
+
+.info {
+    margin-bottom: 50px;
+    /* border: 1px red solid; */
+}
+
+.fileUpload {
+    /* padding: 20px; */
+    text-align: center;
+    /* border: 1px #C0C0C0 solid; */
+}
+
+.heading {
+    font-family: 'Domine';
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+#attribution {
+    color: #777777;
+    position: absolute;
+    bottom: 10px;
+}
+
+#attribution a {
+    color: #777777;
+    /* text-decoration: none; */
+}
+
+#attribution a:hover {
+    text-decoration: none;
+}
+
+#lineOne {
+    font-size: 18px;
+}
+
+#lineTwo {
+    font-size: 22px;
+}
+
+#lineThree {
+    font-size: 22px;
+}
+
+#lineFour {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: 3rem;
+    }
+
+    #lineOne {
+        font-size: 16px;
+    }
+    
+    #lineTwo {
+        font-size: 19px;
+    }
+    
+    #lineThree {
+        font-size: 19px;
+    }
+    
+    #lineFour {
+        font-size: 13px;
+    }
+
+    .center {
+        border-radius: 0px;
+        padding: 14px;
+    }
+}
