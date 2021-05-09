@@ -35,18 +35,21 @@
 }
 
 #attribution {
+    padding: 1px 5px;
+    border-radius: 1px;
     color: #777777;
     position: absolute;
     bottom: 10px;
+    background-color: rgba(225, 255, 255, 0.6);
 }
 
 #attribution a {
-    color: #777777;
-    /* text-decoration: none; */
+    color: #444444;
+    text-decoration: none;
 }
 
 #attribution a:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 #lineOne {
@@ -88,12 +91,16 @@
 
     #attribution {
         font-size: 13px;
-        /* bottom: 0;
-        background-color: rgba(255, 255, 255, 0.9); */
     }
 
     .center {
         border-radius: 0px;
         padding: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #attribution {
+        font-size: 10px;
     }
 }

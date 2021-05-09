@@ -1,10 +1,16 @@
-import React, { useRef } from 'react'
+import React, { useState, useEffect ,useRef } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { fileActions } from '../../store/file'
 
 // import Header from '../../components/Header/Header'
-import bg from '../../assets/flower_2.jpg'
 import classes from './Homepage.module.css'
+
+// images
+import oneBg from '../../assets/one.jpg'
+import twoBg from '../../assets/two.jpg'
+import threeBg from '../../assets/three.jpg'
+import fourBg from '../../assets/four.jpg'
+import fiveBg from '../../assets/five.jpg'
 
 const Homepage = () => {
     const uploadFileRef = useRef(null)
@@ -32,8 +38,14 @@ const Homepage = () => {
         dispatch(fileActions.uploaded())
     }
 
+    const randomBg = () => {
+        const imagesArr = [oneBg, twoBg, threeBg, fourBg, fiveBg]
+        const random = Math.floor(Math.random() * imagesArr.length) + 0
+        return imagesArr[random]
+    }
+
     return (
-        <div className={classes.wrapper} style={{ backgroundImage: `url(${bg})`}}>
+        <div className={classes.wrapper} style={{ backgroundImage: `url(${randomBg()})`}}>
             <div className={classes.center}>
                 <div className={classes.info}>
                     <p className={classes.heading}>StoryTime</p>
@@ -56,7 +68,7 @@ const Homepage = () => {
                     }
                 </div>
             </div>
-            <p id={classes.attribution}><a href='https://www.github.com/daxter-army/storytime_mern_pdf_app' target='_blank'>Created by: <b>Mehul Singh Teya</b></a> | <a href='https://www.freepik.com' target='_blank'>Assets Courtesy: <b>Freepik</b></a></p>
+            <p id={classes.attribution} ><a href='https://www.github.com/daxter-army/storytime_mern_pdf_app' target='_blank'>Created by: <b>Mehul Singh Teya</b></a> | <a href='https://www.freepik.com' target='_blank'>Assets Courtesy: <b>Freepik</b></a></p>
         </div>
     )
 }
